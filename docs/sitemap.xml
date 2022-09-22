@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.zhangmengyang.tk/tags/leetcode/</loc>
+    <lastmod>2022-09-22T23:42:59+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.zhangmengyang.tk/leetcode/leetcode-21/</loc>
+    <lastmod>2022-09-22T23:42:59+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.zhangmengyang.tk/leetcode/</loc>
+    <lastmod>2022-09-22T23:42:59+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.zhangmengyang.tk/tags/</loc>
+    <lastmod>2022-09-22T23:42:59+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.zhangmengyang.tk/</loc>
+    <lastmod>2022-09-22T23:42:59+08:00</lastmod>
+  </url><url>
     <loc>https://blog.zhangmengyang.tk/tags/first/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
@@ -9,12 +24,6 @@
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://blog.zhangmengyang.tk/posts/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.zhangmengyang.tk/tags/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.zhangmengyang.tk/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://blog.zhangmengyang.tk/categories/</loc>
