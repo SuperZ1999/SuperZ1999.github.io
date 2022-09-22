@@ -42,4 +42,4 @@ class Solution {
 
 ---
 
-[合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
+1. [合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
