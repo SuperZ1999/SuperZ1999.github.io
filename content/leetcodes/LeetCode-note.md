@@ -63,6 +63,31 @@ draft: true
 
 #### 1. [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
 
+### 判断两个链表是否相交
+
+#### 解法
+
+找到相交点的关键是将相交点之前的节点数凑成相等的，这样的话同时遍历，如果相等的话就是相交了。怎么凑呢？将两个链表连接一下，节点数不就想等了吗。
+
+代码实现方面，可以考虑四种情况：
+
+1. 长度相等，有相交
+2. 长度相等，无相交
+3. 长度不等，有相交
+4. 长度不等，无相交
+
+符合这四种情况的链表连接方法如下：
+
+l1 -> null -> l2 -> null
+
+l2 -> null -> l1 -> null
+
+详见：[](https://blog.zhangmengyang.tk/leetcodes/leetcode-160/)
+
+#### 题目
+
+#### 1. [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
+
 ## 思想
 
 ### 快慢指针
