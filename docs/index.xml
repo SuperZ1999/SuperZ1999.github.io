@@ -17,9 +17,9 @@
       <pubDate>Fri, 23 Sep 2022 12:32:27 +0800</pubDate>
       
       <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-19/</guid>
-      <description>思路 关键是找到倒数第n+1个节点，找到倒数第n个节点的做法：先让快指针走n步，然后快慢指针一起动，当快指针到头了的时候，慢指针指向的就是需要找的节点。
+      <description>思路 关键是找到倒数第n+1个节点，找到倒数第n个节点的做法：先让p1指针走n步，然后p1和p2指针一起动，当p1指针到头了的时候，p2指针指向的就是需要找的节点。
 注意使用dummy节点可以避免特殊性，比如就5个节点，删除倒数第5个，那需要找倒数第6个节点，可是总共就5个节点，会有空指针。
-我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 class Solution { private ListNode findFromEnd(ListNode head, int n) { ListNode p1 = head; // 先让快指针走n步 for (int i = 0; i &amp;lt; n; i++) { p1 = p1.next; } ListNode p2 = head; // 快指针走到头，慢指针指向的就是需要找的节点 while (p1 !</description>
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 class Solution { private ListNode findFromEnd(ListNode head, int n) { ListNode p1 = head; // 先让p1指针走n步 for (int i = 0; i &amp;lt; n; i++) { p1 = p1.next; } ListNode p2 = head; // p1指针走到头，p2指针指向的就是需要找的节点 while (p1 !</description>
     </item>
     
     <item>

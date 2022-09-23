@@ -7,7 +7,7 @@ draft: false
 
 ### 思路
 
-关键是找到倒数第n+1个节点，找到倒数第n个节点的做法：先让快指针走n步，然后快慢指针一起动，当快指针到头了的时候，慢指针指向的就是需要找的节点。
+关键是找到倒数第n+1个节点，找到倒数第n个节点的做法：先让p1指针走n步，然后p1和p2指针一起动，当p1指针到头了的时候，p2指针指向的就是需要找的节点。
 
 注意使用dummy节点可以避免特殊性，比如就5个节点，删除倒数第5个，那需要找倒数第6个节点，可是总共就5个节点，会有空指针。
 
@@ -17,13 +17,13 @@ draft: false
 class Solution {
     private ListNode findFromEnd(ListNode head, int n) {
         ListNode p1 = head;
-        // 先让快指针走n步
+        // 先让p1指针走n步
         for (int i = 0; i < n; i++) {
             p1 = p1.next;
         }
 
         ListNode p2 = head;
-        // 快指针走到头，慢指针指向的就是需要找的节点
+        // p1指针走到头，p2指针指向的就是需要找的节点
         while (p1 != null) {
             p1 = p1.next;
             p2 = p2.next;
