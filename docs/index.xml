@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Sep 2022 14:18:22 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 14:49:25 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 141</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-141/</link>
+      <pubDate>Fri, 23 Sep 2022 14:49:25 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-141/</guid>
+      <description>思路 利用快慢指针的思想，如果快指针为空，说明没有环，如果快慢指针相遇说明有环
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 public class Solution { public boolean hasCycle(ListNode head) { ListNode slow = head, fast = head; // 快慢指针如果相遇，说明链表有环 while (fast != null &amp;amp;&amp;amp; fast.next != null) { fast = fast.next.next; slow = slow.next; if (fast == slow) { return true; } } return false; } } References 1. 环形链表 </description>
+    </item>
+    
     <item>
       <title>LeetCode 876</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-876/</link>

@@ -41,6 +41,16 @@ draft: true
 
 #### 1. [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)
 
+### 判断链表是否包含环
+
+#### 解法
+
+利用快慢指针的思想，如果快指针为空，说明没有环，如果快慢指针相遇说明有环
+
+#### 题目
+
+#### 1. [环形链表](https://leetcode.cn/problems/linked-list-cycle/)
+
 ## 思想
 
 ### 快慢指针
