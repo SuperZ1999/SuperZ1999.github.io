@@ -1,7 +1,7 @@
 baseURL: "https://blog.zhangmengyang.tk/"
 languageCode: zh-cn #en-us
 title: ZMY's Blog
-paginate: 8
+paginate: 6
 theme: PaperMod
 
 enableInlineShortcodes: true
