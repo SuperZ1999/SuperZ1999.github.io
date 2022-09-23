@@ -10,7 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Sep 2022 12:32:27 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 14:18:22 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 876</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-876/</link>
+      <pubDate>Fri, 23 Sep 2022 14:18:22 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-876/</guid>
+      <description>思路 利用快慢指针的思想，每当慢指针 slow 前进一步，快指针 fast 就前进两步，这样，当 fast 走到链表末尾时，slow 就指向了链表中点。
+需要注意的是，如果链表长度为偶数，也就是说中点有两个的时候，我们这个解法返回的节点是靠后的那个节点。
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 class Solution { public ListNode middleNode(ListNode head) { ListNode slow = head, fast = head; // 经典快慢指针 while (fast != null &amp;amp;&amp;amp; fast.next != null) { fast = fast.next.next; slow = slow.next; } return slow; } } References 1. 链表的中间结点 </description>
+    </item>
+    
     <item>
       <title>LeetCode 19</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-19/</link>
