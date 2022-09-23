@@ -44,7 +44,7 @@ l2 -> null -> l1 -> null
 
 这个逻辑可以覆盖这种情况的，相当于 `c1` 节点是 null 空指针嘛，可以正确返回 null。
 
-转载于： [](https://labuladong.gitee.io/algo/2/19/18/)
+转载于： <https://labuladong.gitee.io/algo/2/19/18/>
 
 ### 我的代码
 

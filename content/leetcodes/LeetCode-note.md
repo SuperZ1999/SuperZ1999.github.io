@@ -57,7 +57,7 @@ draft: true
 
 利用快慢指针的思想并且稍做分析，即可得出结论：当快慢指针相遇时，让其中任一个指针指向头节点，然后让它俩以相同速度前进，再次相遇时所在的节点位置就是环开始的位置。
 
-详见：[](https://blog.zhangmengyang.tk/leetcodes/leetcode-142/)
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-142/>
 
 #### 题目
 
@@ -84,7 +84,7 @@ l2 -> null -> l1 -> null
 
 另一种做法：将某一条链表首尾相连，该问题就转换为寻找有环链表的环起点问题。
 
-详见：[](https://blog.zhangmengyang.tk/leetcodes/leetcode-160/)
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-160/>
 
 #### 题目
 
