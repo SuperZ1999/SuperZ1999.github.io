@@ -10,7 +10,29 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Sep 2022 15:02:29 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 15:29:13 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 160</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-160/</link>
+      <pubDate>Fri, 23 Sep 2022 15:29:13 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-160/</guid>
+      <description>思路 找到相交点的关键是将相交点之前的节点数凑成相等的，这样的话同时遍历，如果相等的话就是相交了。怎么凑呢？将两个链表连接一下，节点数不就想等了吗。
+代码实现方面，可以考虑四种情况：
+长度相等，有相交 长度相等，无相交 长度不等，有相交 长度不等，无相交 符合这四种情况的链表连接方法如下：
+l1 -&amp;gt; null -&amp;gt; l2 -&amp;gt; null
+l2 -&amp;gt; null -&amp;gt; l1 -&amp;gt; null
+另一种做法：将某一条链表首尾相连，该问题就转换为寻找有环链表的环起点问题。
+分析过程 难点在于，由于两条链表的长度可能不同，两条链表之间的节点无法对应：
+如果用两个指针 p1 和 p2 分别在两条链表上前进，并不能同时走到公共节点，也就无法得到相交节点 c1。
+解决这个问题的关键是，通过某些方式，让 p1 和 p2 能够同时到达相交节点 c1。
+所以，我们可以让 p1 遍历完链表 A 之后开始遍历链表 B，让 p2 遍历完链表 B 之后开始遍历链表 A，这样相当于「逻辑上」两条链表接在了一起。
+如果这样进行拼接，就可以让 p1 和 p2 同时进入公共部分，也就是同时到达相交节点 c1：
+那你可能会问，如果说两个链表没有相交点，是否能够正确的返回 null 呢？
+这个逻辑可以覆盖这种情况的，相当于 c1 节点是 null 空指针嘛，可以正确返回 null。
+转载于： 我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 public class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) { ListNode p1 = headA, p2 = headB; while (p1 !</description>
+    </item>
+    
     <item>
       <title>LeetCode 142</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-142/</link>

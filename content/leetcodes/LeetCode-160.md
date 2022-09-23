@@ -2,7 +2,7 @@
 title: "LeetCode 160"
 date: 2022-09-23T15:29:13+08:00
 tags: ["leetcode"]
-draft: true
+draft: false
 ---
 
 ### 思路
@@ -21,6 +21,8 @@ draft: true
 l1 -> null -> l2 -> null
 
 l2 -> null -> l1 -> null
+
+另一种做法：将某一条链表首尾相连，该问题就转换为寻找有环链表的环起点问题。
 
 ### 分析过程
 
