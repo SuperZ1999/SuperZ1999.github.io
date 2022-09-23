@@ -25,7 +25,7 @@ draft: false
 
 所以，只要我们把快慢指针中的任一个重新指向 `head`，然后两个指针同速前进，`k - m` 步后一定会相遇，相遇之处就是环的起点了。
 
-转载于：https://labuladong.gitee.io/algo/2/19/18/
+转载于：[](https://labuladong.gitee.io/algo/2/19/18/)
 
 ### 我的代码
 

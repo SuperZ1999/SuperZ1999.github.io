@@ -57,7 +57,7 @@ draft: true
 
 利用快慢指针的思想并且稍做分析，即可得出结论：当快慢指针相遇时，让其中任一个指针指向头节点，然后让它俩以相同速度前进，再次相遇时所在的节点位置就是环开始的位置。
 
-详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-142/
+详见：[](https://blog.zhangmengyang.tk/leetcodes/leetcode-142/)
 
 #### 题目
 
