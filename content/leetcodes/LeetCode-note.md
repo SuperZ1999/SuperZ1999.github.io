@@ -15,7 +15,7 @@ draft: true
 
 #### 题目
 
-#### 1. [合并K个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/)
+##### 1. [合并K个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/)
 
 ### 寻找单链表的倒数第 k 个节点
 
@@ -27,7 +27,7 @@ draft: true
 
 #### 题目
 
-#### 1. [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
+##### 1. [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
 
 ### 单链表的中点
 
@@ -39,7 +39,7 @@ draft: true
 
 #### 题目
 
-#### 1. [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)
+##### 1. [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)
 
 ### 判断链表是否包含环
 
@@ -49,7 +49,7 @@ draft: true
 
 #### 题目
 
-#### 1. [环形链表](https://leetcode.cn/problems/linked-list-cycle/)
+##### 1. [环形链表](https://leetcode.cn/problems/linked-list-cycle/)
 
 ### 存在环的链表中寻找环起点
 
@@ -61,7 +61,7 @@ draft: true
 
 #### 题目
 
-#### 1. [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
+##### 1. [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
 
 ### 判断两个链表是否相交
 
@@ -88,7 +88,7 @@ l2 -> null -> l1 -> null
 
 #### 题目
 
-#### 1. [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
+##### 1. [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
 
 ### 反转单链表
 
@@ -98,7 +98,7 @@ l2 -> null -> l1 -> null
 
 #### 题目
 
-#### 1. [反转链表](https://leetcode.cn/problems/reverse-linked-list/)
+##### 1. [反转链表](https://leetcode.cn/problems/reverse-linked-list/)
 
 ### 反转链表前n个节点
 
@@ -122,7 +122,7 @@ l2 -> null -> l1 -> null
 
 #### 题目
 
-#### 1. [反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
+##### 1. [反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
 
 ### K 个一组翻转链表
 
@@ -138,7 +138,27 @@ l2 -> null -> l1 -> null
 
 #### 题目
 
-#### 1. [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
+##### 1. [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
+
+### 链表的前后序遍历
+
+```java
+void traverse(ListNode head) {
+    // 前序遍历代码
+    traverse(head.next);
+    // 后序遍历代码
+}
+```
+
+### 回文串
+
+#### 寻找回文串
+
+核心思想是从中心向两端扩展
+
+#### 判断回文串
+
+核心思想是从两端向中间逼近
 
 ## 思想
 
