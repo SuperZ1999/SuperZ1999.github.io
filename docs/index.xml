@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Sep 2022 15:29:13 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 22:01:54 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 206</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-206/</link>
+      <pubDate>Fri, 23 Sep 2022 22:01:54 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-206/</guid>
+      <description>思路 利用递归的思想，先反转head后面的，然后把head也反转即可。
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 class Solution { public ListNode reverseList(ListNode head) { // 递归出口 if (head == null || head.next == null) { return head; } ListNode last = reverseList(head.next); head.next.next = head; head.next = null; return last; } } References 1. 反转链表 </description>
+    </item>
+    
     <item>
       <title>LeetCode 160</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-160/</link>
