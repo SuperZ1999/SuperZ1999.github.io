@@ -112,7 +112,7 @@ l2 -> null -> l1 -> null
 
 #### 题目
 
-#### 1. [反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
+无
 
 ### 反转链表节点(m, n)
 
@@ -122,7 +122,23 @@ l2 -> null -> l1 -> null
 
 #### 题目
 
-无
+#### 1. [反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
+
+### K 个一组翻转链表
+
+#### 解法
+
+**1、先反转以 `head` 开头的 `k` 个元素**。
+
+**2、将第 `k + 1` 个元素作为 `head` 递归调用 `reverseKGroup` 函数**。
+
+**3、将上述两个过程的结果连接起来**。
+
+注意base case为最后元素不足 k 个时的情况
+
+#### 题目
+
+#### 1. [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
 
 ## 思想
 
@@ -136,7 +152,7 @@ l2 -> null -> l1 -> null
 
 ### 递归
 
-一个问题 = 规模小点的同类问题 + 扩展成该问题要解决的问题
+一个问题 = 规模更小的同类问题 + 扩展成该问题要解决的问题
 
 这种情况就可以用递归，递归的关键是不要跳进递归，而是明确递归函数的定义
 
