@@ -276,6 +276,8 @@ void traverse(ListNode head) {
 
 `left` 指针在后，`right` 指针在前，两个指针中间的部分就是「窗口」，算法通过扩大和缩小「窗口」来解决某些问题。
 
+详见：<https://labuladong.gitee.io/algo/2/20/27/>
+
 ##### 题目
 
 暂无
@@ -284,7 +286,7 @@ void traverse(ListNode head) {
 
 #### ==二分查找==
 
-
+详见：<https://labuladong.gitee.io/algo/2/20/29/>
 
 #### 两数之和
 
@@ -298,11 +300,15 @@ void traverse(ListNode head) {
 
 ###### 1. [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
 
+##### 扩展
+
+==一个函数秒杀所有 nSum 问题==，详见：<https://labuladong.gitee.io/algo/1/15/>
+
 ## 思想
 
 ### 双指针
 
-就是两个指针，分为左右指针和快慢指针
+就是两个指针，分为左右指针和快慢指针，只要数组有序，就应该想到双指针技巧
 
 #### 左右指针
 
