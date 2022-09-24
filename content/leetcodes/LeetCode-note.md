@@ -322,11 +322,11 @@ void traverse(ListNode head) {
 
 遍历一遍数组，同时从中心向两边寻找回文串，并且保存最长的即可。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-344/>
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-5/>
 
 ##### 题目
 
-###### 1. [反转字符串](
+###### 1. [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
 
 ## 思想
 
