@@ -288,6 +288,73 @@ void traverse(ListNode head) {
 
 详见：<https://labuladong.gitee.io/algo/2/20/29/>
 
+##### 口诀
+
+![img](https://labuladong.gitee.io/algo/images/%e4%ba%8c%e5%88%86%e6%9f%a5%e6%89%be/poem.png)
+
+##### 框架
+
+```java
+int binarySearch(int[] nums, int target) {
+    int left = 0, right = ...;
+
+    while(...) {
+        int mid = left + (right - left) / 2;
+        if (nums[mid] == target) {
+            ...
+        } else if (nums[mid] < target) {
+            left = ...
+        } else if (nums[mid] > target) {
+            right = ...
+        }
+    }
+    return ...;
+}
+```
+
+**分析二分查找的一个技巧是：不要出现 else，而是把所有情况用 else if 写清楚，这样可以清楚地展现所有细节**。
+
+其中 `...` 标记的部分，就是可能出现细节问题的地方，当你见到一个二分查找的代码时，首先注意这几个地方。
+
+注意**计算 `mid` 时需要防止溢出**，代码中 `left + (right - left) / 2` 就和 `(left + right) / 2` 的结果相同，但是有效防止了 `left` 和 `right` 太大，直接相加导致溢出的情况。
+
+##### 寻找一个数
+
+```java
+public int search(int[] nums, int target) {
+        int left = 0, right = nums.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] > target) {
+                right = mid -1;
+            } else if (nums[mid] < target) {
+                left = mid + 1;
+            }
+        }
+
+        return -1;
+    }
+```
+
+**1、为什么 while 循环的条件中是 <=，而不是 <**？
+
+因为搜索空间是[left, right]，那么肯定是left>right时停止搜索，如果是[left, right)， 那么就是left>=right时停止搜索
+
+**2、为什么 `left = mid + 1`，`right = mid - 1`？我看有的代码是 `right = mid` 或者 `left = mid`，没有这些加加减减，到底怎么回事，怎么判断**？
+
+本算法搜索区间是 `[left, right]`。当我们发现索引 `mid` 不是要找的 `target` 时，下一步当然应该去搜索区间 `[left, mid-1]` 或者区间 `[mid+1, right]` ，**因为 `mid` 已经搜索过，应该从搜索区间中去除**。
+
+**3、此算法有什么缺陷**？
+
+无法直接寻找左右侧边界
+
+##### 寻找左侧边界的二分搜索
+
+
+
 #### 两数之和
 
 ##### 解法
