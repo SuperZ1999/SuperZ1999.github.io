@@ -284,76 +284,112 @@ void traverse(ListNode head) {
 
 ### 左右指针在数组中的应用
 
-#### ==二分查找==
+#### 二分查找
 
-详见：<https://labuladong.gitee.io/algo/2/20/29/>
+就是将搜索空间合理的分成两部分，摒弃不可能的那部分，缩减搜索空间，加快搜索速度
 
-##### 口诀
-
-![img](https://labuladong.gitee.io/algo/images/%e4%ba%8c%e5%88%86%e6%9f%a5%e6%89%be/poem.png)
-
-##### 框架
-
-```java
-int binarySearch(int[] nums, int target) {
-    int left = 0, right = ...;
-
-    while(...) {
-        int mid = left + (right - left) / 2;
-        if (nums[mid] == target) {
-            ...
-        } else if (nums[mid] < target) {
-            left = ...
-        } else if (nums[mid] > target) {
-            right = ...
-        }
-    }
-    return ...;
-}
-```
-
-**分析二分查找的一个技巧是：不要出现 else，而是把所有情况用 else if 写清楚，这样可以清楚地展现所有细节**。
-
-其中 `...` 标记的部分，就是可能出现细节问题的地方，当你见到一个二分查找的代码时，首先注意这几个地方。
-
-注意**计算 `mid` 时需要防止溢出**，代码中 `left + (right - left) / 2` 就和 `(left + right) / 2` 的结果相同，但是有效防止了 `left` 和 `right` 太大，直接相加导致溢出的情况。
-
-##### 寻找一个数
+##### 经典思路
 
 ```java
 public int search(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (nums[mid] == target) {
+            return mid;
+        } else if (nums[mid] > target) {
+            right = mid -1;
+        } else if (nums[mid] < target) {
+            left = mid + 1;
+        }
+    }
+
+    return -1;
+}
+```
+
+这种就是一边缩减搜索空间，一边寻找要找的元素。
+
+但是有时候问题并不是这么简单，比如寻找一个可能在数组里不存在，或者是找边界这样的问题，这时使用进阶思路 ，在循环体内排除一定不存在目标元素的区间会更简单一些。
+
+经典思路是寻找元素
+
+进阶思路是排除n-1个不可能的元素
+
+##### 进阶思路
+
+```java
+class Solution {
+    public int search(int[] nums, int target) {
+        // 此思路搜索空间为[left, right]，闭闭空间
         int left = 0, right = nums.length - 1;
 
-        while (left <= right) {
+        // 循环条件写成left<right，因为循环体内把数组分成两部分，那么一定会达到left和right重合的状态
+        // 所以循环条件写成left<right，可以保证退出循环时left等于right
+        while (left < right) {
+            // 求中点，left=mid+1时不需要向上取整
             int mid = left + (right - left) / 2;
-            if (nums[mid] == target) {
-                return mid;
-            } else if (nums[mid] > target) {
-                right = mid -1;
-            } else if (nums[mid] < target) {
+            // left=mid时需要向上取整，记忆方式：left和mid要有一个+1
+            // 这么做的原因是：向下取整时，如果还剩下两个元素，刚好又走到left=mid这个分支，就死循环了，因为此时mid就等于left
+            //int mid = left + (right - left + 1) / 2;
+            // 下面是核心逻辑，分成两个区间是因为这样扩展性更强
+            // 这块主要就是筛选不可能的区间，然后缩减搜索空间，具体问题具体分析，注意left没加一时mid要加一
+            if (target > nums[mid]) {
                 left = mid + 1;
+            } else {
+                right = mid;
             }
+            /*if (target <= nums[mid]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }*/
+            /*if (target < nums[mid]) {
+                right = mid - 1;
+            } else {
+                left = mid;
+            }*/
+            /*if (target >= nums[mid]) {
+                left = mid;
+            } else {
+                right = mid -1;
+            }*/
+        }
+
+        // 此时left一定等于right，所以返回left或者right都一样
+        // 排除了n-1个不可能的元素，还剩下[left, right]区间的元素，而left=right，就看剩下这个是不是要寻找的元素了
+        // 如果该题一定存在指定的元素，那么下一步可以省略，直接return left就好了
+        if (nums[left] == target) {
+            return left;
         }
 
         return -1;
     }
+}
 ```
 
-**1、为什么 while 循环的条件中是 <=，而不是 <**？
+###### 步骤
 
-因为搜索空间是[left, right]，那么肯定是left>right时停止搜索，如果是[left, right)， 那么就是left>=right时停止搜索
+1. left和right分别设置为搜索空间的左右端点，注意是闭区间
+2. 循环条件写成left<right
+3. 求中点，先写成`int mid = left + (right - left) / 2;`
+4. 根据具体问题将搜索空间分成两部分，其中一部分必须是不可能的区域，然后根据这个不可能区域的特征写出第一个if，然后else里写和if互补的区域就好了，注意如果结果是left=mid，上面求中点要改成`int mid = left + (right - left + 1) / 2;`
+5. 如果根据题意不能判断出一定存在寻找的元素，需要判断下`nums[left]`是不是寻找的元素，是则`return left`，否则未找到该元素；如果根据题意能判断出一定存在寻找的元素，那直接`return left`就好了
 
-**2、为什么 `left = mid + 1`，`right = mid - 1`？我看有的代码是 `right = mid` 或者 `left = mid`，没有这些加加减减，到底怎么回事，怎么判断**？
+###### 注意点
 
-本算法搜索区间是 `[left, right]`。当我们发现索引 `mid` 不是要找的 `target` 时，下一步当然应该去搜索区间 `[left, mid-1]` 或者区间 `[mid+1, right]` ，**因为 `mid` 已经搜索过，应该从搜索区间中去除**。
+1. 此思路搜索空间为[left, right]，闭闭空间
+2. 循环条件写成left<right，因为循环体内把数组分成两部分，并且根据left的取值选择mid是向上或向下取整，那么一定会达到left和right重合的状态（把所有情况都模拟一边就可以得出这个结论），所以循环条件写成left<right，可以保证退出循环时left等于right
+3. 求中点时，如果使用`(left + right) / 2`有可能相加溢出，为了防止溢出使用`left + (right - left) / 2`
+4. 求中点时，left=mid+1时不需要向下取整，left=mid时需要向上取整，记忆方式：left和mid要有一个+1。这么做的原因是：向下取整时，如果还剩下两个元素，刚好又走到left=mid这个分支，就死循环了，因为此时mid就等于left。right=mid时需要向下取整，原因同理
+5. 把搜索空间分成两个区间是因为这样扩展性更强
+6. 缩减搜索空间时，将搜索空间分成两部分需要注意分出不可能的区间，然后缩减搜索空间，具体问题具体分析，根据这个不可能区间的特征写出第一个if，然后else里写和if互补的区域
+7. 注意left没加一时mid要加一
+8. 退出循环后left和right相等，并且是唯一有希望的元素（只是有希望，有可能不是它，还要再判断一下，如果该题一定存在指定的元素，那么直接`return left`就好了）
+9. 对于寻找左右侧边界的二分查找，在缩减搜索空间时一定要考虑>=或<=的情况，因为这样才能使用找左或右侧这个性质，比如`target <= nums[mid]`，可以寻找左边界，因为这时左边界不可能在mid右边所以直接`right=mid`就可以找到左边界，右边界同理。为什么找到的是左边界，也可以这么理解：`target <= nums[mid]`->`right=mid`，所以`target > nums[mid]`->`left=mid + 1`，此时left左边全部都小于target，因为退出循环时如果能找到target，left指向的就是target，又因为left左边全部都小于target，所以此时left指向左边界。找右边界同理。
 
-**3、此算法有什么缺陷**？
-
-无法直接寻找左右侧边界
-
-##### 寻找左侧边界的二分搜索
-
-
+详见：leetcode笔记word版和<https://leetcode.cn/leetbook/read/learning-algorithms-with-leetcode/xs41qg/>
 
 #### 两数之和
 
