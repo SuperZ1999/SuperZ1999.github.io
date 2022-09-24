@@ -13,6 +13,8 @@ draft: true
 
 略
 
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-21/>
+
 #### 题目
 
 ##### 1. [合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
@@ -23,6 +25,8 @@ draft: true
 
 从头到尾遍历一遍链表，将小于x的放到一个链表里，将大于等于x的放到一个链表里，最后再拼接这两个链表即可，注意dummy节点的使用。
 
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-86/>
+
 #### 题目
 
 ##### 1. [分隔链表](https://leetcode.cn/problems/partition-list/)
@@ -32,6 +36,8 @@ draft: true
 #### 解法
 
 每次取出一个最小的加到链表中去，那问题就是怎么高效的获取最小的节点，这很明显用优先队列（二叉堆）就可以解决这个问题。
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-23/>
 
 #### 题目
 
@@ -45,6 +51,8 @@ draft: true
 
 注意使用dummy节点可以避免特殊性，比如就5个节点，删除倒数第5个，那需要找倒数第6个节点，可是总共就5个节点，会有空指针。
 
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-19/>
+
 #### 题目
 
 ##### 1. [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
@@ -57,6 +65,8 @@ draft: true
 
 需要注意的是，如果链表长度为偶数，也就是说中点有两个的时候，我们这个解法返回的节点是靠后的那个节点。
 
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-876/>
+
 #### 题目
 
 ##### 1. [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)
@@ -66,6 +76,8 @@ draft: true
 #### 解法
 
 利用快慢指针的思想，如果快指针为空，说明没有环，如果快慢指针相遇说明有环
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-141/>
 
 #### 题目
 
@@ -116,6 +128,8 @@ l2 -> null -> l1 -> null
 
 利用递归的思想，先反转head后面的，然后把head也反转即可。
 
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-206/>
+
 #### 思想
 
 反转的过程就是改变指针方向的过程并且最后一个指向null，比如反转第2个---第5个：
@@ -142,6 +156,8 @@ l2 -> null -> l1 -> null
 
 2、刚才我们直接把 `head.next` 设置为 null，因为整个链表反转后原来的 `head` 变成了整个链表的最后一个节点。但现在 `head` 节点在递归反转之后不一定是最后一个节点了，所以要记录后驱 `successor`（第 `n + 1` 个节点），反转之后将 `head` 连接上。
 
+详见：<https://blog.zhangmengyang.tk/leetcodes/反转链表前n个节点/>
+
 #### 题目
 
 无
@@ -151,6 +167,8 @@ l2 -> null -> l1 -> null
 #### 解法
 
 与反转链表前n个节点区别在于不是从第一个节点开始反转，而是从left开始，那么只需要利用递归一次head往后移一位，left和right分别减一的特性，把head移到left的位置，然后反转前n个节点即可。
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-92/>
 
 #### 题目
 
@@ -167,6 +185,8 @@ l2 -> null -> l1 -> null
 **3、将上述两个过程的结果连接起来**。
 
 注意base case为最后元素不足 k 个时的情况
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-25/>
 
 #### 题目
 
@@ -210,6 +230,8 @@ void traverse(ListNode head) {
 
 链表也可以后序遍历，这道题只需要使用后序遍历，然后提前存一下head，从两边向中间逼近就可以了。
 
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-234-链表后序遍历/>
+
 ###### 利用栈
 
 同链表后序遍历
@@ -219,6 +241,8 @@ void traverse(ListNode head) {
 ###### 快慢指针+反转链表
 
 先用快慢指针找到链表的中点，从而找到回文串的后一半，然后将后一半反转，然后判断前后两部分是否相等就行了。
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-234-快慢指针+反转链表/>
 
 #### 题目
 
@@ -234,7 +258,7 @@ void traverse(ListNode head) {
 
 慢指针指向当前已经去重的数据的最后一个，快指针去前面探路，碰到和slow不一样的数据就让这个数据放在slow后面，slow++。
 
-具体变种详见：
+具体变种详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-26+83+27+283/>
 
 ##### 题目
 
@@ -245,6 +269,26 @@ void traverse(ListNode head) {
 ###### 3. [移除元素](https://leetcode.cn/problems/remove-element/)
 
 ###### 4. [移动零](https://leetcode.cn/problems/move-zeroes/)
+
+#### ==滑动窗口==
+
+##### 解法
+
+`left` 指针在后，`right` 指针在前，两个指针中间的部分就是「窗口」，算法通过扩大和缩小「窗口」来解决某些问题。
+
+##### 题目
+
+暂无
+
+### 左右指针在数组中的应用
+
+#### ==二分查找==
+
+
+
+#### 两数之和
+
+
 
 ## 思想
 

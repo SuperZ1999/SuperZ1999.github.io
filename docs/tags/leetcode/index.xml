@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 24 Sep 2022 14:13:53 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Sep 2022 14:58:51 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 167</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-167/</link>
+      <pubDate>Sat, 24 Sep 2022 14:58:51 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-167/</guid>
+      <description>思路 利用左右指针的思想，从两边向中间逼近，如果左右之和太大，那就right&amp;ndash;，否则left++，知道左右之和等于target。
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 class Solution { public int[] twoSum(int[] numbers, int target) { int left = 0, right = numbers.length - 1; while (left &amp;lt; right) { int sum = numbers[left] + numbers[right]; if (sum &amp;gt; target) { right--; } else if (sum &amp;lt; target) { left++; } else { return new int[]{left + 1, right + 1}; } } return new int[]{0, 0}; } } References 1.</description>
+    </item>
+    
     <item>
       <title>LeetCode 26&#43;83&#43;27&#43;283</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-26&#43;83&#43;27&#43;283/</link>
