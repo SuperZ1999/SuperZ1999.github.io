@@ -224,13 +224,39 @@ void traverse(ListNode head) {
 
 ##### 1. [回文链表](https://leetcode.cn/problems/palindrome-linked-list/)
 
+## 数组
+
+### 快慢指针在数组中的应用
+
+#### 数组元素去重
+
+##### 解法
+
+慢指针指向当前已经去重的数据的最后一个，快指针去前面探路，碰到和slow不一样的数据就让这个数据放在slow后面，slow++。
+
+具体变种详见：
+
+##### 题目
+
+###### 1. [删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)
+
+###### 2. [删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
+
+###### 3. [移除元素](https://leetcode.cn/problems/remove-element/)
+
+###### 4. [移动零](https://leetcode.cn/problems/move-zeroes/)
+
 ## 思想
 
 ### 双指针
 
-就是两个指针，不解释
+就是两个指针，分为左右指针和快慢指针
 
-### 快慢指针
+#### 左右指针
+
+两个指针一个左一个右，不解释
+
+#### 快慢指针
 
 两个指针一个快一个慢，不解释
 

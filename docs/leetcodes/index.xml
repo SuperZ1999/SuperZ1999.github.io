@@ -10,7 +10,21 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 24 Sep 2022 00:05:26 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Sep 2022 14:13:53 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 26&#43;83&#43;27&#43;283</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-26&#43;83&#43;27&#43;283/</link>
+      <pubDate>Sat, 24 Sep 2022 14:13:53 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-26&#43;83&#43;27&#43;283/</guid>
+      <description>思路 都属于快慢指针里的原地修改数组问题（数组元素去重问题）
+26 慢指针指向当前已经去重的数据的最后一个，快指针去前面探路，碰到和slow不一样的数据就让这个数据放在slow后面，slow++。
+83 同26，只不过是链表，要注意去重后要把slow后面的链表断开，否则slow后面可能会有和slow重复的。
+27 同26，只不过不是比较slow和fast的元素，而是让fast和确定的值比较。
+283 同27，只不过得把slow后面的改成0。
+我的代码 26 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 class Solution { public int removeDuplicates(int[] nums) { int slow = 0, fast = 0; while (fast &amp;lt; nums.length) { if (nums[fast] != nums[slow]) { slow++; nums[slow] = nums[fast]; } fast++; } return slow + 1; } } 83 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 class Solution { public ListNode deleteDuplicates(ListNode head) { if (head == null) { return null; } ListNode slow = head, fast = head; while (fast !</description>
+    </item>
+    
     <item>
       <title>LeetCode 234 快慢指针&#43;反转链表</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-234-%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88&#43;%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</link>
