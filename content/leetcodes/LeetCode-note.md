@@ -304,6 +304,18 @@ void traverse(ListNode head) {
 
 ==一个函数秒杀所有 nSum 问题==，详见：<https://labuladong.gitee.io/algo/1/15/>
 
+#### 反转数组
+
+##### 解法
+
+利用左右指针的思想，从两边向中间逼近，同时交换左右的值
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-344/>
+
+##### 题目
+
+###### 1. [反转字符串](https://leetcode.cn/problems/reverse-string/)
+
 ## 思想
 
 ### 双指针
