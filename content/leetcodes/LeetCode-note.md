@@ -316,6 +316,18 @@ void traverse(ListNode head) {
 
 ###### 1. [反转字符串](https://leetcode.cn/problems/reverse-string/)
 
+#### 回文串判断
+
+##### 解法
+
+遍历一遍数组，同时从中心向两边寻找回文串，并且保存最长的即可。
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-344/>
+
+##### 题目
+
+###### 1. [反转字符串](
+
 ## 思想
 
 ### 双指针
