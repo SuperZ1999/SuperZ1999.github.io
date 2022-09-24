@@ -288,7 +288,15 @@ void traverse(ListNode head) {
 
 #### 两数之和
 
+##### 解法
 
+利用左右指针的思想，从两边向中间逼近，如果左右之和太大，那就right--，否则left++，直到左右之和等于target。
+
+详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-167/>
+
+##### 题目
+
+###### 1. [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
 
 ## 思想
 
