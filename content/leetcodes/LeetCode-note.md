@@ -403,10 +403,6 @@ class Solution {
 
 ###### 1. [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
 
-##### 扩展
-
-==一个函数秒杀所有 nSum 问题==，详见：<https://labuladong.gitee.io/algo/1/15/>
-
 #### 反转数组
 
 ##### 解法
