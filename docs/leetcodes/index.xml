@@ -317,6 +317,32 @@ fast 一定比 slow 多走了 k 步，这多走的 k 步其实就是 fast 指针
     </item>
     
     <item>
+      <title>LeetCode Note</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-note/</link>
+      <pubDate>Fri, 23 Sep 2022 10:21:48 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-note/</guid>
+      <description>链表 合并两个有序链表 解法 略
+题目 1. 合并两个有序链表 题解详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-21/
+单链表的分解 解法 从头到尾遍历一遍链表，将小于x的放到一个链表里，将大于等于x的放到一个链表里，最后再拼接这两个链表即可，注意dummy节点的使用。
+题目 1. 分隔链表 题解详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-86/
+合并 k 个有序链表 解法 每次取出一个最小的加到链表中去，那问题就是怎么高效的获取最小的节点，这很明显用优先队列（二叉堆）就可以解决这个问题。
+题目 1. 合并K个升序链表 题解详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-23/
+寻找单链表的倒数第 k 个节点 解法 关键是找到倒数第n+1个节点，找到倒数第n个节点的做法：先让快指针走n步，然后快慢指针一起动，当快指针到头了的时候，慢指针指向的就是需要找的节点。
+注意使用dummy节点可以避免特殊性，比如就5个节点，删除倒数第5个，那需要找倒数第6个节点，可是总共就5个节点，会有空指针。
+题目 1. 删除链表的倒数第 N 个结点 题解详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-19/
+单链表的中点 解法 利用快慢指针的思想，每当慢指针 slow 前进一步，快指针 fast 就前进两步，这样，当 fast 走到链表末尾时，slow 就指向了链表中点。
+需要注意的是，如果链表长度为偶数，也就是说中点有两个的时候，我们这个解法返回的节点是靠后的那个节点。
+题目 1. 链表的中间结点 题解详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-876/
+判断链表是否包含环 解法 利用快慢指针的思想，如果快指针为空，说明没有环，如果快慢指针相遇说明有环
+题目 1. 环形链表 题解详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-141/
+存在环的链表中寻找环起点 解法 利用快慢指针的思想并且稍做分析，即可得出结论：当快慢指针相遇时，让其中任一个指针指向头节点，然后让它俩以相同速度前进，再次相遇时所在的节点位置就是环开始的位置。
+题目 1. 环形链表 II 题解详见：https://blog.zhangmengyang.tk/leetcodes/leetcode-142/
+判断两个链表是否相交 解法 找到相交点的关键是将相交点之前的节点数凑成相等的，这样的话同时遍历，如果相等的话就是相交了。怎么凑呢？将两个链表连接一下，节点数不就想等了吗。
+代码实现方面，可以考虑四种情况：</description>
+    </item>
+    
+    <item>
       <title>LeetCode 86</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-86/</link>
       <pubDate>Fri, 23 Sep 2022 00:09:37 +0800</pubDate>
