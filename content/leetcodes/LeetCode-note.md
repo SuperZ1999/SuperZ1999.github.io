@@ -350,6 +350,18 @@ void traverse(ListNode head) {
 
 题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-5/>
 
+## 前缀和在数组里的应用
+
+### 一维数组中的前缀和
+
+#### 解法
+
+利用前缀和的思想轻松秒杀，需要注意在preSum中，第n + 1个元素存的时nums前n个元素的和，整体往后挪一位
+
+#### 题目
+
+##### 1. [区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/)
+
 # 思想
 
 ## 双指针
@@ -540,6 +552,10 @@ void slidingWindow(String s) {
 注意递归需要递归出口（也就是base case）
 
 值得一提的是，递归操作链表并不高效。和迭代解法相比，虽然时间复杂度都是 O(N)，但是迭代解法的空间复杂度是 O(1)，而递归解法需要堆栈，空间复杂度是 O(N)。
+
+## 前缀和
+
+对于一个数组，求此数组[left, right]区域内的和时，不需要从left--right逐个相加，直接right+1前的和减去left前的和即可，要想使用这种方式就得有一个前缀和数组，用来存该数组前k个的和。
 
 # 其他
 

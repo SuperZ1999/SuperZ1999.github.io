@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Sep 2022 22:16:07 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 22:41:54 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 303</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-303/</link>
+      <pubDate>Sun, 25 Sep 2022 22:41:54 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-303/</guid>
+      <description>思路 利用前缀和的思想轻松秒杀，需要注意在preSum中，第n + 1个元素存的时nums前n个元素的和，整体往后挪一位
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 class NumArray { int[] preSum; public NumArray(int[] nums) { preSum = new int[nums.length + 1]; for (int i = 1; i &amp;lt; preSum.length; i++) { preSum[i] = preSum[i - 1] + nums[i - 1]; } } public int sumRange(int left, int right) { return preSum[right + 1] - preSum[left]; } } References 1.</description>
+    </item>
+    
     <item>
       <title>LeetCode 3</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-3/</link>
