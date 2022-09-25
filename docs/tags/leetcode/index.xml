@@ -10,14 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Sep 2022 22:41:54 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 23:11:19 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 304</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-304/</link>
+      <pubDate>Sun, 25 Sep 2022 23:11:19 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-304/</guid>
+      <description>思路 利用前缀和的思想轻松秒杀，需要注意在preSum中，第[n + 1, n+1]个元素存的是matrix前n*n个元素的和，整体往右下挪一位
+还需要注意做减法时，会多减一块区域，需要加回来
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 class NumMatrix { int[][] preSum; public NumMatrix(int[][] matrix) { preSum = new int[matrix.length + 1][matrix[0].length + 1]; for (int i = 1; i &amp;lt; preSum.length; i++) { for (int j = 1; j &amp;lt; preSum[0].length; j++) { preSum[i][j] = preSum[i - 1][j] + preSum[i][j - 1] - preSum[i - 1][j - 1] + matrix[i - 1][j - 1]; } } } public int sumRegion(int row1, int col1, int row2, int col2) { return preSum[row2 + 1][col2 + 1] - preSum[row1][col2 + 1] - preSum[row2 + 1][col1] + preSum[row1][col1]; } } References 1.</description>
+    </item>
+    
     <item>
       <title>LeetCode 303</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-303/</link>
       <pubDate>Sun, 25 Sep 2022 22:41:54 +0800</pubDate>
       
       <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-303/</guid>
-      <description>思路 利用前缀和的思想轻松秒杀，需要注意在preSum中，第n + 1个元素存的时nums前n个元素的和，整体往后挪一位
+      <description>思路 利用前缀和的思想轻松秒杀，需要注意在preSum中，第n + 1个元素存的是nums前n个元素的和，整体往后挪一位
 我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 class NumArray { int[] preSum; public NumArray(int[] nums) { preSum = new int[nums.length + 1]; for (int i = 1; i &amp;lt; preSum.length; i++) { preSum[i] = preSum[i - 1] + nums[i - 1]; } } public int sumRange(int left, int right) { return preSum[right + 1] - preSum[left]; } } References 1.</description>
     </item>
     

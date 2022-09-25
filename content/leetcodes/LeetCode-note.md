@@ -362,6 +362,8 @@ void traverse(ListNode head) {
 
 ##### 1. [区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/)
 
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-303/>
+
 # 思想
 
 ## 双指针
@@ -555,7 +557,7 @@ void slidingWindow(String s) {
 
 ## 前缀和
 
-对于一个数组，求此数组[left, right]区域内的和时，不需要从left--right逐个相加，直接right+1前的和减去left前的和即可，要想使用这种方式就得有一个前缀和数组，用来存该数组前k个的和。
+对于一个数组，求此数组[left, right]区域内的和时，不需要从left--right逐个相加，直接right+1前的和减去left前的和即可，要想使用这种方式就得有一个前缀和数组，用来存该数组前k个的和。注意也可能是二维数组，稍作修改即可。
 
 # 其他
 
