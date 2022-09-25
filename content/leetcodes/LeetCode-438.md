@@ -52,7 +52,7 @@ class Solution {
 
 ### 另一种思路
 
-```java
+```c++
 vector<int> findAnagrams(string s, string t) {
     unordered_map<char, int> need, window;
     for (char c : t) need[c]++;

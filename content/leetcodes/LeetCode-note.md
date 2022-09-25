@@ -282,9 +282,15 @@ void traverse(ListNode head) {
 
 ##### 1. [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
 
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-76/>
+
 ##### 2. [字符串的排列](https://leetcode.cn/problems/permutation-in-string/)
 
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-567/>
+
 ##### 3. [找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-438/>
 
 ## 左右指针在数组中的应用
 
@@ -298,7 +304,11 @@ void traverse(ListNode head) {
 
 ##### 1. [在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-34/>
+
 ##### 2. [二分查找](https://leetcode.cn/problems/binary-search/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-704/>
 
 ### 两数之和
 
