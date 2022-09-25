@@ -13,11 +13,11 @@ draft: true
 
 略
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-21/>
-
 ### 题目
 
 #### 1. [合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-21/>
 
 ## 单链表的分解
 
@@ -25,11 +25,11 @@ draft: true
 
 从头到尾遍历一遍链表，将小于x的放到一个链表里，将大于等于x的放到一个链表里，最后再拼接这两个链表即可，注意dummy节点的使用。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-86/>
-
 ### 题目
 
 #### 1. [分隔链表](https://leetcode.cn/problems/partition-list/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-86/>
 
 ## 合并 k 个有序链表
 
@@ -37,11 +37,11 @@ draft: true
 
 每次取出一个最小的加到链表中去，那问题就是怎么高效的获取最小的节点，这很明显用优先队列（二叉堆）就可以解决这个问题。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-23/>
-
 ### 题目
 
 #### 1. [合并K个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-23/>
 
 ## 寻找单链表的倒数第 k 个节点
 
@@ -51,11 +51,11 @@ draft: true
 
 注意使用dummy节点可以避免特殊性，比如就5个节点，删除倒数第5个，那需要找倒数第6个节点，可是总共就5个节点，会有空指针。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-19/>
-
 ### 题目
 
 #### 1. [删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-19/>
 
 ## 单链表的中点
 
@@ -65,11 +65,11 @@ draft: true
 
 需要注意的是，如果链表长度为偶数，也就是说中点有两个的时候，我们这个解法返回的节点是靠后的那个节点。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-876/>
-
 ### 题目
 
 #### 1. [链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-876/>
 
 ## 判断链表是否包含环
 
@@ -77,11 +77,11 @@ draft: true
 
 利用快慢指针的思想，如果快指针为空，说明没有环，如果快慢指针相遇说明有环
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-141/>
-
 ### 题目
 
 #### 1. [环形链表](https://leetcode.cn/problems/linked-list-cycle/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-141/>
 
 ## 存在环的链表中寻找环起点
 
@@ -89,11 +89,11 @@ draft: true
 
 利用快慢指针的思想并且稍做分析，即可得出结论：当快慢指针相遇时，让其中任一个指针指向头节点，然后让它俩以相同速度前进，再次相遇时所在的节点位置就是环开始的位置。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-142/>
-
 ### 题目
 
 #### 1. [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-142/>
 
 ## 判断两个链表是否相交
 
@@ -116,19 +116,17 @@ l2 -> null -> l1 -> null
 
 另一种做法：将某一条链表首尾相连，该问题就转换为寻找有环链表的环起点问题。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-160/>
-
 ### 题目
 
 #### 1. [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-160/>
 
 ## 反转单链表
 
 ### 解法
 
 利用递归的思想，先反转head后面的，然后把head也反转即可。
-
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-206/>
 
 ### 思想
 
@@ -146,6 +144,8 @@ l2 -> null -> l1 -> null
 
 #### 1. [反转链表](https://leetcode.cn/problems/reverse-linked-list/)
 
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-206/>
+
 ## 反转链表前n个节点
 
 ### 解法
@@ -156,11 +156,11 @@ l2 -> null -> l1 -> null
 
 2、刚才我们直接把 `head.next` 设置为 null，因为整个链表反转后原来的 `head` 变成了整个链表的最后一个节点。但现在 `head` 节点在递归反转之后不一定是最后一个节点了，所以要记录后驱 `successor`（第 `n + 1` 个节点），反转之后将 `head` 连接上。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/反转链表前n个节点/>
-
 ### 题目
 
 无
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/反转链表前n个节点/>
 
 ## 反转链表节点(m, n)
 
@@ -168,11 +168,11 @@ l2 -> null -> l1 -> null
 
 与反转链表前n个节点区别在于不是从第一个节点开始反转，而是从left开始，那么只需要利用递归一次head往后移一位，left和right分别减一的特性，把head移到left的位置，然后反转前n个节点即可。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-92/>
-
 ### 题目
 
 #### 1. [反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-92/>
 
 ## K 个一组翻转链表
 
@@ -186,11 +186,11 @@ l2 -> null -> l1 -> null
 
 注意base case为最后元素不足 k 个时的情况
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-25/>
-
 ### 题目
 
 #### 1. [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-25/>
 
 ## 链表的前后序遍历
 
@@ -230,7 +230,7 @@ void traverse(ListNode head) {
 
 链表也可以后序遍历，这道题只需要使用后序遍历，然后提前存一下head，从两边向中间逼近就可以了。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-234-链表后序遍历/>
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-234-链表后序遍历/>
 
 ##### 利用栈
 
@@ -242,7 +242,7 @@ void traverse(ListNode head) {
 
 先用快慢指针找到链表的中点，从而找到回文串的后一半，然后将后一半反转，然后判断前后两部分是否相等就行了。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-234-快慢指针+反转链表/>
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-234-快慢指针+反转链表/>
 
 ### 题目
 
@@ -284,6 +284,8 @@ void traverse(ListNode head) {
 
 ##### 2. [字符串的排列](https://leetcode.cn/problems/permutation-in-string/)
 
+##### 3. [找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
+
 ## 左右指针在数组中的应用
 
 ### 二分查找
@@ -304,11 +306,11 @@ void traverse(ListNode head) {
 
 利用左右指针的思想，从两边向中间逼近，如果左右之和太大，那就right--，否则left++，直到左右之和等于target。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-167/>
-
 #### 题目
 
 ##### 1. [两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-167/>
 
 ### 反转数组
 
@@ -316,11 +318,11 @@ void traverse(ListNode head) {
 
 利用左右指针的思想，从两边向中间逼近，同时交换左右的值
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-344/>
-
 #### 题目
 
 ##### 1. [反转字符串](https://leetcode.cn/problems/reverse-string/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-344/>
 
 ### 回文串判断
 
@@ -328,11 +330,11 @@ void traverse(ListNode head) {
 
 遍历一遍数组，同时从中心向两边寻找回文串，并且保存最长的即可。
 
-详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-5/>
-
 #### 题目
 
 ##### 1. [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-5/>
 
 # 思想
 
