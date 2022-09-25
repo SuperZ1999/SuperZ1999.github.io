@@ -378,6 +378,22 @@ void traverse(ListNode head) {
 
 题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-304/>
 
+## 差分数组
+
+### 解法
+
+详见思想章节
+
+### 题目
+
+##### 1. [航班预订统计](https://leetcode.cn/problems/corporate-flight-bookings/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-1109/>
+
+##### 1. [拼车](https://leetcode.cn/problems/car-pooling/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-1094/>
+
 # 思想
 
 ## 双指针
@@ -613,36 +629,36 @@ class NumArray {
 
 ```java
 class Difference {
-        private int[] diff;
+    private int[] diff;
 
-        public Difference(int[] nums) {
-            assert nums.length > 0;
-            diff = new int[nums.length];
+    public Difference(int[] nums) {
+        assert nums.length > 0;
+        diff = new int[nums.length];
 
-            diff[0] = nums[0];
-            for (int i = 1; i < nums.length; i++) {
-                diff[i] = nums[1] - nums[0];
-            }
-        }
-
-        public void increment(int i, int j, int val) {
-            diff[i] += val;
-            // 注意这里j有可能是最后一个元素，此时的意思就是i后面的元素全部加val，所以不需要减val了
-            if (j + 1 < diff.length) {
-                diff[j + 1] -= val;
-            }
-        }
-
-        public int[] result() {
-            int[] res = new int[diff.length];
-            res[0] = diff[0];
-
-            for (int i = 1; i < diff.length; i++) {
-                res[i] = res[i - 1] + diff[i];
-            }
-            return res;
+        diff[0] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            diff[i] = nums[1] - nums[0];
         }
     }
+
+    public void increment(int i, int j, int val) {
+        diff[i] += val;
+        // 注意这里j有可能是最后一个元素，此时的意思就是i后面的元素全部加val，所以不需要减val了
+        if (j + 1 < diff.length) {
+            diff[j + 1] -= val;
+        }
+    }
+
+    public int[] result() {
+        int[] res = new int[diff.length];
+        res[0] = diff[0];
+
+        for (int i = 1; i < diff.length; i++) {
+            res[i] = res[i - 1] + diff[i];
+        }
+        return res;
+    }
+}
 ```
 
 # 其他
