@@ -282,6 +282,8 @@ void traverse(ListNode head) {
 
 ##### 1. [最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
 
+##### 2. [字符串的排列](https://leetcode.cn/problems/permutation-in-string/)
+
 ## 左右指针在数组中的应用
 
 ### 二分查找
