@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Sep 2022 00:24:53 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 15:22:34 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 周赛-312</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-%E5%91%A8%E8%B5%9B-312/</link>
+      <pubDate>Sun, 25 Sep 2022 15:22:34 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-%E5%91%A8%E8%B5%9B-312/</guid>
+      <description>思路 第一题 排序，不解释
+第二题 按位与只会越与越小，那既然要找最大的结果，那遍历一遍数组统计一下最大的数出现了几次就可以了
+第三题 暴力会超时，利用动态规划的思想，从左往右遍历一遍找各元素左边递减的元素个数，从右往左遍历一遍找各元素右边递增的元素个数，然后和k比较就可以了
+我的代码 第一题 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 class Solution { public String[] sortPeople(String[] names, int[] heights) { People[] peoples = new People[names.length]; for(int i = 0; i &amp;lt; peoples.length; i++) { peoples[i] = new People(names[i], heights[i]); } Arrays.sort(peoples, (a, b) -&amp;gt; b.height - a.</description>
+    </item>
+    
     <item>
       <title>LeetCode 34</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-34/</link>
