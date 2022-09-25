@@ -364,6 +364,20 @@ void traverse(ListNode head) {
 
 题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-303/>
 
+### 二维数组中的前缀和
+
+#### 解法
+
+利用前缀和的思想轻松秒杀，需要注意在preSum中，第[n + 1, n+1]个元素存的是matrix前n*n个元素的和，整体往右下挪一位
+
+还需要注意做减法时，会多减一块区域，需要加回来
+
+#### 题目
+
+##### 1. [二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-304/>
+
 # 思想
 
 ## 双指针
@@ -558,6 +572,78 @@ void slidingWindow(String s) {
 ## 前缀和
 
 对于一个数组，求此数组[left, right]区域内的和时，不需要从left--right逐个相加，直接right+1前的和减去left前的和即可，要想使用这种方式就得有一个前缀和数组，用来存该数组前k个的和。注意也可能是二维数组，稍作修改即可。
+
+**主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和**。
+
+详见：<https://labuladong.gitee.io/algo/2/20/24/>
+
+### 标准模板
+
+```JAVA
+class NumArray {
+    int[] preSum;
+
+    public NumArray(int[] nums) {
+        preSum = new int[nums.length + 1];
+
+        for (int i = 1; i < preSum.length; i++) {
+            preSum[i] = preSum[i - 1] + nums[i - 1];
+        }
+    }
+    
+    public int sumRange(int left, int right) {
+        return preSum[right + 1] - preSum[left];
+    }
+}
+```
+
+## 差分数组
+
+**差分数组的主要适用场景是频繁对原始数组的某个区间的元素进行增减**
+
+类似前缀和构造的 `preSum` 数组，我们先对 `nums` 数组构造一个 `diff` 差分数组，**`diff[i]` 就是 `nums[i]` 和 `nums[i-1]` 之差**，通过这个 `diff` 差分数组是可以反推出原始数组 `nums` 的，理解：diff[0]就是原数组的第一个元素，其他元素就是比前一个元素高多少
+
+**这样构造差分数组 `diff`，就可以快速进行区间增减的操作**，如果你想对区间 `nums[i..j]` 的元素全部加 3，那么只需要让 `diff[i] += 3`，然后再让 `diff[j+1] -= 3` 即可
+
+**原理很简单，回想 `diff` 数组反推 `nums` 数组的过程，`diff[i] += 3` 意味着给 `nums[i..]` 所有的元素都加了 3，然后 `diff[j+1] -= 3` 又意味着对于 `nums[j+1..]` 所有元素再减 3，那综合起来，就是对 `nums[i..j]` 中的所有元素都加 3 了**
+
+详见：<https://labuladong.gitee.io/algo/2/20/25/>
+
+### 标准模板
+
+```java
+class Difference {
+        private int[] diff;
+
+        public Difference(int[] nums) {
+            assert nums.length > 0;
+            diff = new int[nums.length];
+
+            diff[0] = nums[0];
+            for (int i = 1; i < nums.length; i++) {
+                diff[i] = nums[1] - nums[0];
+            }
+        }
+
+        public void increment(int i, int j, int val) {
+            diff[i] += val;
+            // 注意这里j有可能是最后一个元素，此时的意思就是i后面的元素全部加val，所以不需要减val了
+            if (j + 1 < diff.length) {
+                diff[j + 1] -= val;
+            }
+        }
+
+        public int[] result() {
+            int[] res = new int[diff.length];
+            res[0] = diff[0];
+
+            for (int i = 1; i < diff.length; i++) {
+                res[i] = res[i - 1] + diff[i];
+            }
+            return res;
+        }
+    }
+```
 
 # 其他
 
