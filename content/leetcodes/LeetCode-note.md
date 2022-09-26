@@ -404,13 +404,29 @@ void traverse(ListNode head) {
 
 ### 题目
 
-##### 1. [航班预订统计](https://leetcode.cn/problems/corporate-flight-bookings/)
+#### 1. [航班预订统计](https://leetcode.cn/problems/corporate-flight-bookings/)
 
 题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-1109/>
 
-##### 1. [拼车](https://leetcode.cn/problems/car-pooling/)
+#### 2. [拼车](https://leetcode.cn/problems/car-pooling/)
 
 题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-1094/>
+
+## 矩阵的螺旋遍历
+
+### 解法
+
+**解题的核心思路是按照右、下、左、上的顺序遍历数组，并使用四个变量圈定未遍历元素的边界**：
+
+![img](https://labuladong.gitee.io/algo/images/%e8%8a%b1%e5%bc%8f%e9%81%8d%e5%8e%86/6.png)
+
+需要注意水平遍历需要判断upperBound<=lowerBound，垂直遍历需要判断leftBound<=rightBound
+
+### 题目
+
+#### 1. [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-54/>
 
 # 思想
 

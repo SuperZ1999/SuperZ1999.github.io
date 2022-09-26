@@ -10,7 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Sep 2022 11:12:45 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 21:39:37 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/leetcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 54</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-54/</link>
+      <pubDate>Mon, 26 Sep 2022 21:39:37 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-54/</guid>
+      <description>思路 解题的核心思路是按照右、下、左、上的顺序遍历数组，并使用四个变量圈定未遍历元素的边界：
+需要注意水平遍历需要判断upperBound&amp;lt;=lowerBound，垂直遍历需要判断leftBound&amp;lt;=rightBound
+我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 class Solution { public List&amp;lt;Integer&amp;gt; spiralOrder(int[][] matrix) { int row = matrix.length, col = matrix[0].length; int upperBound = 0, lowerBound = row - 1; int leftBound = 0, rightBound = col - 1; List&amp;lt;Integer&amp;gt; ans = new ArrayList&amp;lt;&amp;gt;(); while (ans.</description>
+    </item>
+    
     <item>
       <title>LeetCode 48</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-48/</link>
