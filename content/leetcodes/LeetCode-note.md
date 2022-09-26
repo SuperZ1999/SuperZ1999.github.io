@@ -332,11 +332,29 @@ void traverse(ListNode head) {
 
 利用左右指针的思想，从两边向中间逼近，同时交换左右的值
 
+##### 扩展
+
+###### 反转字符数组里的单词
+
+先反转整个数组，然后再反转各个单词即可
+
+###### 旋转矩阵
+
+先按对角线对折矩阵（注意对折矩阵时，只需要遍历矩阵的一半即可，如果整个矩阵都遍历，那矩阵不会有任何变化，相当于对折了两次），再反转矩阵的每一行即可
+
 #### 题目
 
 ##### 1. [反转字符串](https://leetcode.cn/problems/reverse-string/)
 
 题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-344/>
+
+##### 2. [反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-151/>
+
+##### 3. [旋转图像](https://leetcode.cn/problems/rotate-image/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-48/>
 
 ### 回文串判断
 
