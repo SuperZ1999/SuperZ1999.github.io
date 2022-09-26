@@ -10,7 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Sep 2022 21:53:13 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 22:42:24 +0800</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 528</title>
+      <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-528/</link>
+      <pubDate>Mon, 26 Sep 2022 22:42:24 +0800</pubDate>
+      
+      <guid>https://blog.zhangmengyang.tk/leetcodes/leetcode-528/</guid>
+      <description>思路 可以想象成一条线段，分成好几段，每段长度不一样，然后往上面撒石子，返回石子撒到了第几条线段上，直接把这个线段当成一个数组不现实，因为数值有可能很大，所以可以压缩一下，把每一段的长度当成一个元素，但这样寻找随机数处在哪一段还得把前面都加起来，不方便，那就压缩成一个前缀和数组，这样只需要从左往右遍历前缀和数组找第一个大于等于随机数的元素就行了，但是前缀和数组是一个有序数组，我们寻找第一个大于等于随机数的元素使用二分查找就可以快速定位，不需要从头遍历一遍
+有两个需要注意的地方：
+”线段“和前缀和的”格子“的对应关系需要想清楚，这个画张图就明白了 寻找第一个大于等于随机数的元素，需要用寻找左边界的二分查找，而不是寻找右边界的二分查找，详见LeetCode-note的思想章节 我的代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 class Solution { int[] preSum; public Solution(int[] w) { preSum = new int[w.length + 1]; for (int i = 1; i &amp;lt; preSum.length; i++) { preSum[i] = preSum[i - 1] + w[i - 1]; } } public int pickIndex() { int random = new Random().</description>
+    </item>
+    
     <item>
       <title>LeetCode 59</title>
       <link>https://blog.zhangmengyang.tk/leetcodes/leetcode-59/</link>

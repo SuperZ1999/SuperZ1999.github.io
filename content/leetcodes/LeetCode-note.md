@@ -607,6 +607,10 @@ void slidingWindow(String s) {
 
 详见：<https://labuladong.gitee.io/algo/2/20/27/>
 
+##### 进阶
+
+==RABIN KARP 字符匹配算法==，详见：<https://labuladong.gitee.io/algo/2/20/28/>
+
 #### 其他
 
 见上面各知识点章节
