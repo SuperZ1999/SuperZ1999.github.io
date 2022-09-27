@@ -455,11 +455,17 @@ void traverse(ListNode head) {
 
 为了随机选取元素，需要用到数组，并且得是紧凑的，但是数组增删不是O(1)的，所以再来个map，key是数组元素的值，value是数组的索引，这样就做到了O(1)的数组增删，增删的时候注意修改map和数组
 
+核心思想就是为了随机选取元素，肯定得用**数组**存，并且得是**紧凑**的
+
 ### 题目
 
 #### 1. [O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/)
 
 题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-380/>
+
+#### 2. [黑名单中的随机数](https://leetcode.cn/problems/random-pick-with-blacklist/)
+
+题解详见：<https://blog.zhangmengyang.tk/leetcodes/leetcode-710/>
 
 # 思想
 
