@@ -167,6 +167,30 @@
     <loc>https://blog.zhangmengyang.tk/categories/test/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
+    <loc>https://blog.zhangmengyang.tk/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/archives/"
+                />
+  </url><url>
+    <loc>https://blog.zhangmengyang.tk/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/search/"
+                />
+  </url><url>
     <loc>https://blog.zhangmengyang.tk/series/</loc>
   </url>
 </urlset>
