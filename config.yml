@@ -31,31 +31,34 @@ languages:
     profileMode:
       enabled: true
       title: ZMY's Blog
-      imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
+      imageUrl: "https://blog.zhangmengyang.tk/static/profileMode.svg"
       imageTitle: ProfileMode image
       # imageWidth: 120
       # imageHeight: 120
-      subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+      subtitle: "纸上得来终觉浅，绝知此事要躬行"
+      # subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
       buttons:
         - name: Blog
           url: posts
-        - name: Profile Mode
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+        - name: LeetCode
+          url: leetcodes
+        # - name: Profile Mode
+        #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
     menu:
       main:
-        - name: Archive
+        - name: 📚Archive
           url: archives
           weight: 5
-        - name: Search
-          url: search
+        - name: 🎨Categories
+          url: categories
           weight: 10
-        - name: Tags
+        - name: 🏷️Tags
           url: tags
           weight: 10
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki
-        - name: Discord
-          url: https://discord.gg/ahpmTvhVmp
+        - name: :mag:Search
+          url: search
+        # - name: Discord
+        #   url: https://discord.gg/ahpmTvhVmp
 
 outputs:
   home:
