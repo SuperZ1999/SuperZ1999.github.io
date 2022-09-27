@@ -55,7 +55,7 @@ languages:
         - name: 🏷️Tags
           url: tags
           weight: 10
-        - name: :mag:Search
+        - name: Search
           url: search
         # - name: Discord
         #   url: https://discord.gg/ahpmTvhVmp
@@ -106,9 +106,9 @@ params:
     # safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "ZMY's Blog"
     # icon: /apple-touch-icon.png
-    iconHeight: 35
+    # iconHeight: 35
 
   # profile-mode
   profileMode:
