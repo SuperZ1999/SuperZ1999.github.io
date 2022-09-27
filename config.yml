@@ -59,6 +59,44 @@ languages:
           url: search
         # - name: Discord
         #   url: https://discord.gg/ahpmTvhVmp
+  zh:
+    languageName: "Chinese"
+    weight: 2
+    taxonomies:
+      category: 分类
+      tag: 标签
+      series: 系列
+    profileMode:
+      enabled: true
+      title: 张梦阳的博客
+      imageUrl: "https://blog.zhangmengyang.tk/static/profileMode.svg"
+      imageTitle: ProfileMode image
+      # imageWidth: 120
+      # imageHeight: 120
+      subtitle: "纸上得来终觉浅，绝知此事要躬行"
+      # subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+      buttons:
+        - name: 博客
+          url: posts
+        - name: 力扣
+          url: leetcodes
+        # - name: Profile Mode
+        #   url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
+    menu:
+      main:
+        - name: 📚档案
+          url: archives
+          weight: 5
+        - name: 🎨分类
+          url: categories
+          weight: 10
+        - name: 🏷️标签
+          url: tags
+          weight: 10
+        - name: 🔍搜索
+          url: search
+        # - name: Discord
+        #   url: https://discord.gg/ahpmTvhVmp
 
 outputs:
   home:
@@ -99,9 +137,9 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://blog.zhangmengyang.tk/static/1.png"
-    favicon16x16: "https://blog.zhangmengyang.tk/static/1.png"
-    favicon32x32: "https://blog.zhangmengyang.tk/static/1.png"
+    favicon: "https://blog.zhangmengyang.tk/static/2.png"
+    favicon16x16: "https://blog.zhangmengyang.tk/static/2.png"
+    favicon32x32: "https://blog.zhangmengyang.tk/static/2.png"
     # apple_touch_icon: "<link / abs url>"
     # safari_pinned_tab: "<link / abs url>"
 
