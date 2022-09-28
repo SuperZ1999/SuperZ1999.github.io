@@ -9,16 +9,6 @@
       <link>https://blog.zhangmengyang.tk/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>test</title>
-      <link>https://blog.zhangmengyang.tk/categories/test/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>https://blog.zhangmengyang.tk/categories/test/</guid>
-      <description></description>
-    </item>
-    
+    <language>zh-cn</language><atom:link href="https://blog.zhangmengyang.tk/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

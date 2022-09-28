@@ -172,71 +172,6 @@
     <loc>https://blog.zhangmengyang.tk/leetcodes/leetcode-21/</loc>
     <lastmod>2022-09-22T23:42:59+08:00</lastmod>
   </url><url>
-    <loc>https://blog.zhangmengyang.tk/categories/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.zhangmengyang.tk/zh/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.zhangmengyang.tk/categories/"
-                />
-  </url><url>
-    <loc>https://blog.zhangmengyang.tk/tags/first/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.zhangmengyang.tk/zh/tags/first/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.zhangmengyang.tk/tags/first/"
-                />
-  </url><url>
-    <loc>https://blog.zhangmengyang.tk/posts/my-first-post/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.zhangmengyang.tk/zh/posts/my-first-post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.zhangmengyang.tk/posts/my-first-post/"
-                />
-  </url><url>
-    <loc>https://blog.zhangmengyang.tk/posts/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.zhangmengyang.tk/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.zhangmengyang.tk/posts/"
-                />
-  </url><url>
-    <loc>https://blog.zhangmengyang.tk/categories/test/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://blog.zhangmengyang.tk/zh/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.zhangmengyang.tk/categories/test/"
-                />
-  </url><url>
     <loc>https://blog.zhangmengyang.tk/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -247,6 +182,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.zhangmengyang.tk/archives/"
+                />
+  </url><url>
+    <loc>https://blog.zhangmengyang.tk/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/categories/"
                 />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/search/</loc>
