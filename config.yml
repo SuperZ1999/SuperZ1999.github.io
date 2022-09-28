@@ -35,7 +35,7 @@ languages:
       imageTitle: ProfileMode image
       # imageWidth: 120
       # imageHeight: 120
-      subtitle: "纸上得来终觉浅，绝知此事要躬行"
+      subtitle: "Talk is cheap, show me the code"
       # subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
       buttons:
         - name: Blog
