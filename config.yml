@@ -125,14 +125,14 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: false
+  UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: true # 评论
   hidemeta: false
   hideSummary: false
   showtoc: true # 显示目录
-  tocopen: true
+  tocopen: false
 
   assets:
     # disableHLJS: true # to disable highlight.js
