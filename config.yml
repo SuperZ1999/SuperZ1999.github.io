@@ -137,9 +137,9 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://blog.zhangmengyang.tk/static/5.png"
-    favicon16x16: "https://blog.zhangmengyang.tk/static/5.png"
-    favicon32x32: "https://blog.zhangmengyang.tk/static/5.png"
+    favicon: "https://blog.zhangmengyang.tk/static/favicon.ico"
+    favicon16x16: "https://blog.zhangmengyang.tk/static/favicon.ico"
+    favicon32x32: "https://blog.zhangmengyang.tk/static/favicon.ico"
     # apple_touch_icon: "<link / abs url>"
     # safari_pinned_tab: "<link / abs url>"
 
