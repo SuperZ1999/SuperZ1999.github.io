@@ -10,6 +10,16 @@
   </url><url>
     <loc>https://blog.zhangmengyang.tk/leetcodes/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/leetcodes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/leetcodes/"
+                />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/tags/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
@@ -59,6 +69,16 @@
   </url><url>
     <loc>https://blog.zhangmengyang.tk/leetcodes/leetcode-3/</loc>
     <lastmod>2022-09-25T22:16:07+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/leetcodes/leetcode-3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/leetcodes/leetcode-3/"
+                />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/leetcodes/leetcode-438/</loc>
     <lastmod>2022-09-25T21:52:06+08:00</lastmod>
