@@ -13,10 +13,10 @@
     <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/categories/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My 1st post</title>
-      <link>https://blog.zhangmengyang.tk/posts/my-first-post.zh/</link>
+      <link>https://blog.zhangmengyang.tk/posts/my-first-post/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>https://blog.zhangmengyang.tk/posts/my-first-post.zh/</guid>
+      <guid>https://blog.zhangmengyang.tk/posts/my-first-post/</guid>
       <description>Desc Text.</description>
     </item>
     

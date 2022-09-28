@@ -412,10 +412,10 @@ fast 一定比 slow 多走了 k 步，这多走的 k 步其实就是 fast 指针
     
     <item>
       <title>My 1st post</title>
-      <link>https://blog.zhangmengyang.tk/posts/my-first-post.zh/</link>
+      <link>https://blog.zhangmengyang.tk/posts/my-first-post/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>https://blog.zhangmengyang.tk/posts/my-first-post.zh/</guid>
+      <guid>https://blog.zhangmengyang.tk/posts/my-first-post/</guid>
       <description>Desc Text.</description>
     </item>
     
