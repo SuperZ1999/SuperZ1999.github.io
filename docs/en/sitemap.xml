@@ -4,6 +4,16 @@
   <url>
     <loc>https://blog.zhangmengyang.tk/tags/leetcode/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/tags/leetcode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/tags/leetcode/"
+                />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/leetcodes/leetcode-710/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
@@ -23,6 +33,16 @@
   </url><url>
     <loc>https://blog.zhangmengyang.tk/tags/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/tags/"
+                />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
@@ -154,9 +174,29 @@
   </url><url>
     <loc>https://blog.zhangmengyang.tk/categories/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/categories/"
+                />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/tags/first/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/tags/first/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/tags/first/"
+                />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/posts/my-first-post/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
@@ -186,6 +226,16 @@
   </url><url>
     <loc>https://blog.zhangmengyang.tk/categories/test/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/categories/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/categories/test/"
+                />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/archives/</loc>
     <xhtml:link
@@ -212,5 +262,15 @@
                 />
   </url><url>
     <loc>https://blog.zhangmengyang.tk/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://blog.zhangmengyang.tk/zh/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.zhangmengyang.tk/series/"
+                />
   </url>
 </urlset>
