@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on ZMY&#39;s Blog</title>
-    <link>https://blog.zhangmengyang.tk/posts/</link>
+    <link>https://superz1999.github.io/blog-old/posts/</link>
     <description>Recent content in Posts on ZMY&#39;s Blog</description>
     <image>
-      <url>https://blog.zhangmengyang.tk/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://blog.zhangmengyang.tk/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://superz1999.github.io/blog-old/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://superz1999.github.io/blog-old/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://blog.zhangmengyang.tk/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://superz1999.github.io/blog-old/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My 1st post</title>
-      <link>https://blog.zhangmengyang.tk/posts/my-first-post/</link>
+      <link>https://superz1999.github.io/blog-old/posts/my-first-post/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>https://blog.zhangmengyang.tk/posts/my-first-post/</guid>
+      <guid>https://superz1999.github.io/blog-old/posts/my-first-post/</guid>
       <description>Desc Text.</description>
     </item>
     
