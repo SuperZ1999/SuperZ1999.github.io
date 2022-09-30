@@ -2,19 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://superz1999.github.io/blog-old/zh/tags/leetcode/</loc>
-    <lastmod>2022-09-27T15:05:11+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://superz1999.github.io/blog-old/tags/leetcode/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://superz1999.github.io/blog-old/zh/tags/leetcode/"
-                />
-  </url><url>
     <loc>https://superz1999.github.io/blog-old/zh/leetcodes/leetcode-710/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
     <xhtml:link
@@ -39,19 +26,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://superz1999.github.io/blog-old/zh/leetcodes/"
-                />
-  </url><url>
-    <loc>https://superz1999.github.io/blog-old/zh/tags/</loc>
-    <lastmod>2022-09-27T15:05:11+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://superz1999.github.io/blog-old/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://superz1999.github.io/blog-old/zh/tags/"
                 />
   </url><url>
     <loc>https://superz1999.github.io/blog-old/zh/</loc>
@@ -535,19 +509,6 @@
                 href="https://superz1999.github.io/blog-old/zh/categories/"
                 />
   </url><url>
-    <loc>https://superz1999.github.io/blog-old/zh/tags/first/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://superz1999.github.io/blog-old/tags/first/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://superz1999.github.io/blog-old/zh/tags/first/"
-                />
-  </url><url>
     <loc>https://superz1999.github.io/blog-old/zh/posts/my-first-post/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
     <xhtml:link
@@ -598,6 +559,8 @@
                 hreflang="zh"
                 href="https://superz1999.github.io/blog-old/zh/series/"
                 />
+  </url><url>
+    <loc>https://superz1999.github.io/blog-old/zh/%E6%A0%87%E7%AD%BE/</loc>
   </url><url>
     <loc>https://superz1999.github.io/blog-old/zh/archives/</loc>
     <xhtml:link
