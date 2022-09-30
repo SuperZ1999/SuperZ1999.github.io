@@ -3,7 +3,7 @@ title: "My 1st post"
 date: 2020-09-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-标签: ["第一个"]
+tags: ["first"]
 categories: ["test"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors

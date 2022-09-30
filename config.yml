@@ -64,7 +64,7 @@ languages:
     weight: 2
     taxonomies:
       category: categories
-      tag: 标签
+      tag: tags
       series: series
     profileMode:
       enabled: true

@@ -4,6 +4,16 @@
   <url>
     <loc>https://superz1999.github.io/blog-old/tags/leetcode/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://superz1999.github.io/blog-old/zh/tags/leetcode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://superz1999.github.io/blog-old/tags/leetcode/"
+                />
   </url><url>
     <loc>https://superz1999.github.io/blog-old/leetcodes/leetcode-710/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
@@ -33,6 +43,16 @@
   </url><url>
     <loc>https://superz1999.github.io/blog-old/tags/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://superz1999.github.io/blog-old/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://superz1999.github.io/blog-old/tags/"
+                />
   </url><url>
     <loc>https://superz1999.github.io/blog-old/</loc>
     <lastmod>2022-09-27T15:05:11+08:00</lastmod>
@@ -517,6 +537,16 @@
   </url><url>
     <loc>https://superz1999.github.io/blog-old/tags/first/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://superz1999.github.io/blog-old/zh/tags/first/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://superz1999.github.io/blog-old/tags/first/"
+                />
   </url><url>
     <loc>https://superz1999.github.io/blog-old/posts/my-first-post/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
